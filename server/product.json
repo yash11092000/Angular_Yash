@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Khima69",
+      "price": "232",
+      "quantity": "2321"
+    },
+    {
+      "id": 3,
+      "name": "Mutton Tikka232323112",
+      "price": "1345323",
+      "quantity": "2323"
+    },
+    {
+      "id": 4,
+      "name": "Mutton Tikka",
+      "price": 1345,
+      "quantity": 5
+    },
+    {
+      "id": 5,
+      "name": "Mutton Tikka",
+      "price": 1345,
+      "quantity": 5
+    },
+    {
+      "id": "54",
+      "name": "butter tikka",
+      "price": "343",
+      "quantity": "454"
+    },
+    {
+      "id": "6767",
+      "name": "butter Tikka",
+      "price": "334",
+      "quantity": "3"
+    },
+    {
+      "id": "09",
+      "name": "satay",
+      "price": "10",
+      "quantity": "2"
+    }
+  ]
+}

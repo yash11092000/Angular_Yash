@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <script>
+        let a = 10;
+        let b = 20;
+        let c =(a,b)=>{
+            return a+b;
+        }
+        let sum = c(2,4)
+        console.log(`the sum of ${a} and ${b} is ${sum}`);
+
+        let arr = [1,2,3];
+        let arr2 = [...arr,5,6];
+        console.log(arr +"_"+ arr2);
+        arr.push(10);
+        console.log(arr +"_"+ arr2);
+
+        let res = (...args)=>{
+
+            let sum = 0;
+            (args).forEach(element => {
+                sum+=element;
+            });
+            return sum;
+        }
+
+        console.log("the sum is "+res(1,2,3,4));
+        console.log("the sum is "+res(1,2,3,4,3));
+        console.log("the sum is "+res(1,2,3,4,5));
+
+        class abc{
+            constructor(){
+                this.speed = 10;
+            }
+            acc(){
+                this.speed+=20;
+            }
+            getspeed(){
+                console.log(this.speed);
+            }
+
+        }
+
+        let obj = new abc();
+        obj.acc();
+        obj.getspeed();
+
+        class par{
+            constructor(){
+                this.name = "yash";
+            }
+            name(){
+                return "chacha";
+            }
+            get le(){
+                return this.name;
+            }
+            set de(Lname){
+                this.name += Lname; 
+            }
+        }
+        class chi extends par{
+            name(){
+                let x = "vidhayak";
+                let y = super.name();
+                console.log(y+" "+x); 
+            }
+        }
+
+        // let child = new chi();
+        // child.name(); 
+
+        let parent = new par();
+        console.log(parent.name);
+        parent.de = "bhosale" 
+        console.log(parent.name); 
+    </script>
+</body>
+</html>
